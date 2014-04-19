@@ -41,5 +41,6 @@ end
 # Use Capistrano for deployment
     gem 'capistrano', group: :development
 	gem "twitter-bootstrap-rails"
+	gem 'simple_form'
 # Use debugger
 # gem 'debugger', group: [:development, :test]

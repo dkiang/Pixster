@@ -1,7 +1,8 @@
-<div class="private-square span4">
+<div class="private-square span4 offset2 text-center">
+	<h1>Add a Comment</h1><br />
 	<%= simple_form_for @post do |f| %>
-		<%= f.input :title %>
-  		<%= f.input :description %>
-  		<%= f.button :submit %>
+		<%= f.input :title, label: 'What is your name?', required: true  %>
+  		<%= f.input :description, label: 'What feedback do you have?', placeholder: 'Be descriptive' %>
+  		<%= f.button :submit, :class => 'btn btn-warning btn-medium' %>
   	<% end %>
 </div>
